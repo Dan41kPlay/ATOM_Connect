@@ -16,6 +16,8 @@ class AtomConnect(qtws.QWidget):
         self.used = False
         self.w = 600
         self.h = 200
+        qtg.QFontDatabase.addApplicationFont('gothic.ttf')
+        self.font_ = 'Century Gothic'
         self.setGeometry((windll.user32.GetSystemMetrics(0) - self.w) // 2,
                          (windll.user32.GetSystemMetrics(1) - self.h) // 2, self.w, self.h)
         self.setWindowTitle(f'ATOM Connect v{config.VA_VER}')
@@ -23,16 +25,16 @@ class AtomConnect(qtws.QWidget):
         self.setFixedSize(self.size())
         self.listen_btn = qtws.QPushButton('Слушать', self)
         self.listen_btn.resize(self.listen_btn.sizeHint())
-        self.listen_btn.setFont(qtg.QFont('Century Gothic', 20, 5))
+        self.listen_btn.setFont(qtg.QFont(self.font_, 20, 50))
         self.listen_btn.resize(150, 50)
         self.listen_btn.move(10, 10)
         self.listen_btn.clicked.connect(self.clicked)
         self.explain_label = qtws.QLabel('Чтобы обратиться к ассистенту, начните со слова\n"Атом" или нажмите кнопку "Слушать" и говорите.', self)
-        self.explain_label.setFont(qtg.QFont('Century Gothic', 12))
+        self.explain_label.setFont(qtg.QFont(self.font_, 12))
         self.explain_label.resize(self.explain_label.sizeHint())
         self.explain_label.move(170, 15)
         self.executed_command = qtws.QLabel(self)
-        self.executed_command.setFont(qtg.QFont('Century Gothic', 14))
+        self.executed_command.setFont(qtg.QFont(self.font_, 14))
         self.executed_command.resize(self.w - 20, 130)
         self.executed_command.move(10, 70)
         self.executed_command.setAlignment(qtc.Qt.AlignHCenter)
