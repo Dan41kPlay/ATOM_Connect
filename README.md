@@ -109,7 +109,7 @@ ATOM Connect - это голосовое управление электромо
     
 <h2>Связь с разработчиками</h2>
 
-Если вы нашли ошибку в работа приложения, создайте [issue](issues/new).
+Если вы нашли ошибку в работа приложения, создайте [issue](https://github.com/Dan41kPlay/ATOM_Connect/issues/new).
 Также с разработчиками можно связаться по эл. почте или в соц. сетях:
 
 * daniel.zakirov.06@gmail.com, [Telegram](https://t.me/dp229), [VK](https://vk.com/dp229)
