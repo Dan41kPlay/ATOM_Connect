@@ -41,6 +41,8 @@ def execute_cmd(cmd: str) -> str:
             return 'Привет! Рад вас снова видеть!'
         case 'bye':
             return 'Пока! До скорой встречи...'
+        case 'dela':
+            return 'Пока всё отлично!'
         case 'current_time':
             now = datetime.now()
             return f'Сейчас {num2text(now.hour)} {num2text(now.minute)}.'
