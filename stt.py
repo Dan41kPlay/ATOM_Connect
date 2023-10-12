@@ -1,7 +1,8 @@
-import vosk
-import sys
-import sounddevice as sd
 import queue
+import sys
+
+import sounddevice as sd
+import vosk
 from ujson import loads
 
 model = vosk.Model("model_small")
@@ -25,7 +26,7 @@ def va_listen():
         while True:
             while not rec.AcceptWaveform(q.get()):
                 pass
-            yield loads(rec.Result())['text']  # if rec.AcceptWaveform(q.get()) else loads(rec.PartialResult())['partial']
+            yield loads(rec.Result())['text']
 
 
 if __name__ == '__main__':
