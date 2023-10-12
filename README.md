@@ -108,9 +108,11 @@ ATOM Connect - это голосовое управление электромо
     * >Включает/выключает климат контроль.
     
 <h2>Связь с разработчиками</h2>
-Если вы нашли ошибку в работа приложения, создайте Issue.
 
-* daniel.zakirov.06@gmail.com
+Если вы нашли ошибку в работа приложения, создайте [issue](github.com/Dan41kPlay/ATOM_Connect/issues/new).
+Также с разработчиками можно связаться по эл. почте или в соц. сетях:
+
+* daniel.zakirov.06@gmail.com, [Telegram](t.me/dp229), [VK](vk.com/dp229)
 
 * shakerchik@gmail.com
 
